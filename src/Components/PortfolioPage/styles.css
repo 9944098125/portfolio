@@ -19,6 +19,21 @@
   width: 35%;
   text-align: center;
 }
+@media screen and (max-width: 945px) {
+  .main-white-head {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 640px) {
+  .main-white-head {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 450px) {
+  .main-white-head {
+    width: 90%;
+  }
+}
 .what-do-i-do-container {
   margin-top: 50px;
   min-height: 100vh;
@@ -37,11 +52,13 @@
   font-size: 25px;
   font-style: italic;
   font-weight: 600;
+  text-align: center;
 }
 .grid-container {
   width: 85%;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 .item-container {
   width: 280px;
@@ -76,7 +93,7 @@
 }
 .portfolio-container {
   min-height: 100vh;
-  background-color: purple;
+  background-color: rgb(197, 181, 197);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -86,21 +103,34 @@
   width: 90%;
   min-height: 50vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
 }
 .each-grid {
-  height: 500px;
-  width: 300px;
+  height: 400px;
+  width: 500px;
   margin: 10px 15px;
   padding: 15px;
-  background-color: rgb(0, 0, 0);
+  background-color: rgb(147, 145, 145);
   border-radius: 9px;
+}
+@media screen and (max-width: 540px) {
+  .each-grid {
+    width: 300px;
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1080px) {
+  .projects-grid-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 .each-grid .img-container {
   height: 60%;
   width: 90%;
-  padding: 15px;
+  padding: 15px 25px;
 }
 .each-grid .img-container img {
   height: 100%;
@@ -127,6 +157,7 @@
   color: white;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .portfolio {
   color: white;
@@ -152,6 +183,7 @@
 }
 .skills {
   margin: 0 0;
+  text-align: center;
 }
 .contact-container {
   min-height: 100vh;
@@ -170,6 +202,11 @@
   flex-direction: column;
   align-items: center;
   gap: 50px;
+}
+@media screen and (max-width: 500px) {
+  .contact-text {
+    width: 90%;
+  }
 }
 .lines {
   font-size: 25px;

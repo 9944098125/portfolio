@@ -1,6 +1,11 @@
 import React from "react";
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 function WhatDoIDo() {
+  React.useEffect(() => {
+    Aos.init({ duration: 2000 });
+  }, []);
   const developmentArray = [
     {
       image:
@@ -43,7 +48,10 @@ function WhatDoIDo() {
         <h5>See my Skills and things that make me satisfied on completion</h5>
         <div className="grid-container">
           {developmentArray.map((item, idx) => (
-            <div className="item-container">
+            <div
+              data-aos={`${idx / 2 === 0 ? "fade-up" : "fade-down"}`}
+              className="item-container"
+            >
               <div className="img-container">
                 <img src={item.image} alt="" />
               </div>
