@@ -109,14 +109,24 @@ function Portfolio() {
 							</h6>
 						</div>
 					</div>
-					<div
-						style={{
-							display: "flex",
-							alignItems: "flex-end",
-							justifyContent: "center",
-						}}
-					>
-						<h3>* Remaining Projects in the local *</h3>
+					<div data-aos="fade-down" className="each-grid">
+						<div className="img-container">
+							<img
+								src="https://res.cloudinary.com/dakda5ni3/image/upload/v1701859578/azdkuxnp2t86jhs0htnp.png"
+								alt=""
+							/>
+						</div>
+						<div className="text-container">
+							<a href="https://asp-foa-react.onrender.com/" target="_blank">
+								<button className="see-project-btn">Take a Look</button>
+							</a>
+							<h3 className="project-name">ASP FOA</h3>
+							<h6 className="project-desc">
+								I have built this website with two roles two create and
+								manipulate the restaurants as well as to order food items and I
+								have also integrated payment gateway in this for customers.
+							</h6>
+						</div>
 					</div>
 				</div>
 			</div>
